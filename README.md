@@ -9,4 +9,6 @@ Currently, two official plugins are available:
 
 
 
-#npx vite build for create dist folder
+1.npx vite build for create dist folder
+2. modify react project
+3.VS code modify Auto Close Tag, Auto Import - ES6, TS, JSX, TSX, Auto Rename Tag, ESLint, npm Intellisense, Path Intellisense, Postman, Prettier - Code formatter,  extentions add for react project
