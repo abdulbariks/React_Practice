@@ -15,3 +15,5 @@ Currently, two official plugins are available:
 
 4. First Functional Component
 type rsc create functional component
+
+5. JSX JavaScript XML, JSX Conventions
