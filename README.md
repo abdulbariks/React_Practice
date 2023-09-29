@@ -16,4 +16,6 @@ Currently, two official plugins are available:
 4. First Functional Component
 type rsc create functional component
 
-5. JSX JavaScript XML, JSX Conventions
+5. JSX JavaScript XML, JSX Conventions,inline css, inline if else, immediately invoked function , JSX Loop Inside with map
+
+6. Conditional readering Using an if-else Statement, Conditional readering Using Switch Statement, Conditional readering Using Ternary Operator

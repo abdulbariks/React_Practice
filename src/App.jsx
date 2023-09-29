@@ -3,6 +3,16 @@ import Hero from "./components/Hero"
 import ContactForm from './components/ContactForm';
 import Footer from './components/Footer'
 
+// Conditional readering , Using an if=else Statement
+const LoginStstusBtn = (status)=>{
+   if (status) {
+    return <button>Logout</button>
+   }
+   else{
+    return <button>Login</button>
+   }
+}
+
 function App() {
     let marks =60;
     const item = ['Dhaka', 'Rangpur', 'Rajshahi', 'Barishal']
@@ -16,7 +26,7 @@ function App() {
        {/* inline css */}
       <h1 style={{color:'red'}}>Hello</h1>
 
-      {/* conditional readering , inline if else*/}
+      {/* inline if else*/}
       {
         marks>80?
         <h1>Brilliant Result</h1>
@@ -54,7 +64,10 @@ function App() {
             }
           </ol>
 
-      </div>
+          {
+            LoginStstusBtn(false)
+          }
+   </div>
 
   )
 }
