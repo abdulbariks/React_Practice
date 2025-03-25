@@ -2,6 +2,7 @@ import { Suspense } from "react";
 import "./App.css";
 import Cricket from "./Cricket";
 import Users from "./components/usersComponents/users";
+import { ErrorBoundary } from "react-error-boundary";
 
 const fetchUsers = async () => {
   const response = await fetch("https://jsonplaceholder.typicode.com/users");
@@ -13,9 +14,11 @@ function App() {
 
   return (
     <>
-      <Suspense fallback={<h3>Users Loading........</h3>}>
-        <Users usersPromise={usersPromise}></Users>
-      </Suspense>
+      <ErrorBoundary fallback={<div>Something went Wrong....</div>}>
+        <Suspense fallback={<h3>Users Loading........</h3>}>
+          <Users usersPromise={usersPromise}></Users>
+        </Suspense>
+      </ErrorBoundary>
       {/* <h2>Cricket Score</h2>
       <Cricket></Cricket> */}
       {/* <h2>Practice React</h2>
